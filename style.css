@@ -100,4 +100,25 @@ body {
 
 .ui.modal .actions button {
   margin-left: 10px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-section .ui.header {
+  margin: 0;
+  flex-grow: 1;
+}
+
+#admin-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#admin-buttons .button {
+  margin: 0;
 } 
