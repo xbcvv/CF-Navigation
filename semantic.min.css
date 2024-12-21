@@ -1,0 +1,197 @@
+/* 图标字体 */
+@font-face {
+  font-family: 'Icons';
+  src: url('https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/themes/default/assets/fonts/icons.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.icon {
+  font-family: 'Icons';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+}
+
+/* 常用图标代码 */
+.icon.folder:before { content: "\\f07b"; }
+.icon.sitemap:before { content: "\\f0e8"; }
+.icon.linkify:before { content: "\\f0c1"; }
+.icon.edit:before { content: "\\f044"; }
+.icon.delete:before { content: "\\f1f8"; }
+.icon.plus:before { content: "\\f067"; }
+.icon.search:before { content: "\\f002"; }
+.icon.user:before { content: "\\f007"; }
+.icon.lock:before { content: "\\f023"; }
+.icon.sign.out:before { content: "\\f08b"; }
+
+/* 由于文件较大，这里只包含我们实际使用到的样式 */
+.ui.container {
+  width: 1127px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ui.header {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 700;
+  line-height: 1.28571429em;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.ui.header .icon {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.ui.header .content {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ui.header .sub.header {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5em;
+  color: rgba(0,0,0,.6);
+}
+
+.ui.button {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.ui.button:hover {
+  background-color: #0056b3;
+}
+
+.ui.negative.button {
+  background-color: #dc3545;
+}
+
+.ui.negative.button:hover {
+  background-color: #c82333;
+}
+
+.ui.mini.button {
+  font-size: .85714286rem;
+  padding: .25rem .5rem;
+}
+
+.ui.small.button {
+  font-size: .92857143rem;
+}
+
+.ui.primary.button {
+  background-color: #007bff;
+}
+
+.ui.primary.button:hover {
+  background-color: #0056b3;
+}
+
+.ui.fluid.input {
+  display: flex;
+  width: 100%;
+}
+
+.ui.input input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  flex: 1;
+}
+
+.ui.selection.dropdown {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  background-color: #fff;
+}
+
+.ui.form {
+  max-width: 100%;
+}
+
+.ui.form .field {
+  margin-bottom: 1rem;
+}
+
+.ui.form .field > label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+.ui.form input[type="text"],
+.ui.form input[type="password"],
+.ui.form input[type="number"] {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.ui.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  z-index: 1000;
+  width: 500px;
+  max-width: 90%;
+}
+
+.ui.modal .header {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.ui.modal .content {
+  padding: 1rem;
+}
+
+.ui.modal .actions {
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  text-align: right;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 999;
+} 
